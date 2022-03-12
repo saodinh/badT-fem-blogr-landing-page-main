@@ -4,10 +4,13 @@ const hamburgerBtn = document.querySelector(".hamburger");
 const headerNav = document.querySelector(".header-nav");
 
 document.querySelector(".nav-list").addEventListener("click", (e) => {
-    dropdownBtns.forEach((btn) => btn.closest(".dropdown").classList.remove("show"));
-    if (e.target.classList.contains("dropdown-toggle")) {
-        e.target.closest(".dropdown").classList.toggle("show");
-    }
+    dropdownBtns.forEach((btn) => {
+        if (e.target !== btn) {
+            btn.closest(".dropdown").classList.remove("show");
+        } else if (e.target === btn) {
+            btn.closest(".dropdown").classList.toggle("show");
+        }
+    });
 });
 
 document.addEventListener("click", (e) => {
