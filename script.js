@@ -1,4 +1,4 @@
-const dropdownBtns = document.querySelectorAll("#dropdown-toggle");
+const dropdownBtns = document.querySelectorAll(".dropdown-toggle");
 const dropdowns = document.querySelectorAll(".dropdown");
 const hamburgerBtn = document.querySelector(".hamburger");
 const headerNav = document.querySelector(".header-nav");
