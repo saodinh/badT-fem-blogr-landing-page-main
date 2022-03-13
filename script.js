@@ -24,7 +24,7 @@ hamburgerBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-    if (headerNav.classList.contains("mobile-show") && window.matchMedia("(min-width: 768px)").matches) {
+    if (headerNav.classList.contains("mobile-show") && window.matchMedia("(min-width: 1000px)").matches) {
         headerNav.classList.remove("mobile-show");
     }
 });
