@@ -22,3 +22,9 @@ document.addEventListener("click", (e) => {
 hamburgerBtn.addEventListener("click", () => {
     headerNav.classList.toggle("mobile-show");
 });
+
+window.addEventListener("resize", () => {
+    if (headerNav.classList.contains("mobile-show") && window.matchMedia("(min-width: 768px)").matches) {
+        headerNav.classList.remove("mobile-show");
+    }
+});
